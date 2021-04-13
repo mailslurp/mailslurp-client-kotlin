@@ -1,0 +1,11 @@
+
+# GroupContactsDto
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**contacts** | [**kotlin.Array&lt;ContactDto&gt;**](ContactDto) |  | 
+**group** | [**GroupDto**](GroupDto) |  | 
+
+
+
