@@ -1,0 +1,38 @@
+$dokka.format:javadoc-v1
+$dokka.linkExtension:html
+$dokka.location:com.mailslurp.apis/AliasControllerApi.Companion///PointingToDeclaration/com/mailslurp/apis/AliasControllerApi.Companion.html
+$dokka.location:com.mailslurp.apis/AttachmentControllerApi.Companion///PointingToDeclaration/com/mailslurp/apis/AttachmentControllerApi.Companion.html
+$dokka.location:com.mailslurp.apis/BulkActionsControllerApi.Companion///PointingToDeclaration/com/mailslurp/apis/BulkActionsControllerApi.Companion.html
+$dokka.location:com.mailslurp.apis/CommonActionsControllerApi.Companion///PointingToDeclaration/com/mailslurp/apis/CommonActionsControllerApi.Companion.html
+$dokka.location:com.mailslurp.apis/ContactControllerApi.Companion///PointingToDeclaration/com/mailslurp/apis/ContactControllerApi.Companion.html
+$dokka.location:com.mailslurp.apis/DomainControllerApi.Companion///PointingToDeclaration/com/mailslurp/apis/DomainControllerApi.Companion.html
+$dokka.location:com.mailslurp.apis/EmailControllerApi.Companion///PointingToDeclaration/com/mailslurp/apis/EmailControllerApi.Companion.html
+$dokka.location:com.mailslurp.apis/ExpiredControllerApi.Companion///PointingToDeclaration/com/mailslurp/apis/ExpiredControllerApi.Companion.html
+$dokka.location:com.mailslurp.apis/FormControllerApi.Companion///PointingToDeclaration/com/mailslurp/apis/FormControllerApi.Companion.html
+$dokka.location:com.mailslurp.apis/GroupControllerApi.Companion///PointingToDeclaration/com/mailslurp/apis/GroupControllerApi.Companion.html
+$dokka.location:com.mailslurp.apis/InboxControllerApi.Companion///PointingToDeclaration/com/mailslurp/apis/InboxControllerApi.Companion.html
+$dokka.location:com.mailslurp.apis/MailServerControllerApi.Companion///PointingToDeclaration/com/mailslurp/apis/MailServerControllerApi.Companion.html
+$dokka.location:com.mailslurp.apis/SentEmailsControllerApi.Companion///PointingToDeclaration/com/mailslurp/apis/SentEmailsControllerApi.Companion.html
+$dokka.location:com.mailslurp.apis/TemplateControllerApi.Companion///PointingToDeclaration/com/mailslurp/apis/TemplateControllerApi.Companion.html
+$dokka.location:com.mailslurp.apis/WaitForControllerApi.Companion///PointingToDeclaration/com/mailslurp/apis/WaitForControllerApi.Companion.html
+$dokka.location:com.mailslurp.apis/WebhookControllerApi.Companion///PointingToDeclaration/com/mailslurp/apis/WebhookControllerApi.Companion.html
+$dokka.location:com.mailslurp.infrastructure/ApiClient.Companion///PointingToDeclaration/com/mailslurp/infrastructure/ApiClient.Companion.html
+$dokka.location:com.mailslurp.infrastructure/ClientException.Companion///PointingToDeclaration/com/mailslurp/infrastructure/ClientException.Companion.html
+$dokka.location:com.mailslurp.infrastructure/ServerException.Companion///PointingToDeclaration/com/mailslurp/infrastructure/ServerException.Companion.html
+$dokka.location:com.mailslurp.models/DNSLookupOptions.RecordTypes///PointingToDeclaration/com/mailslurp/models/DNSLookupOptions.RecordTypes.html
+$dokka.location:com.mailslurp.models/DNSLookupResult.RecordType///PointingToDeclaration/com/mailslurp/models/DNSLookupResult.RecordType.html
+$dokka.location:com.mailslurp.models/DomainNameRecord.RecordType///PointingToDeclaration/com/mailslurp/models/DomainNameRecord.RecordType.html
+$dokka.location:com.mailslurp.models/MatchOption.Field///PointingToDeclaration/com/mailslurp/models/MatchOption.Field.html
+$dokka.location:com.mailslurp.models/MatchOption.Should///PointingToDeclaration/com/mailslurp/models/MatchOption.Should.html
+$dokka.location:com.mailslurp.models/ReplyToAliasEmailOptions.SendStrategy///PointingToDeclaration/com/mailslurp/models/ReplyToAliasEmailOptions.SendStrategy.html
+$dokka.location:com.mailslurp.models/ReplyToEmailOptions.SendStrategy///PointingToDeclaration/com/mailslurp/models/ReplyToEmailOptions.SendStrategy.html
+$dokka.location:com.mailslurp.models/SendEmailOptions.SendStrategy///PointingToDeclaration/com/mailslurp/models/SendEmailOptions.SendStrategy.html
+$dokka.location:com.mailslurp.models/TemplateVariable.VariableType///PointingToDeclaration/com/mailslurp/models/TemplateVariable.VariableType.html
+$dokka.location:com.mailslurp.models/WaitForConditions.CountType///PointingToDeclaration/com/mailslurp/models/WaitForConditions.CountType.html
+$dokka.location:com.mailslurp.models/WaitForConditions.SortDirection///PointingToDeclaration/com/mailslurp/models/WaitForConditions.SortDirection.html
+$dokka.location:com.mailslurp.models/WebhookDto.Method///PointingToDeclaration/com/mailslurp/models/WebhookDto.Method.html
+$dokka.location:com.mailslurp.models/WebhookTestRequest.Method///PointingToDeclaration/com/mailslurp/models/WebhookTestRequest.Method.html
+com.mailslurp.apis
+com.mailslurp.infrastructure
+com.mailslurp.models
+

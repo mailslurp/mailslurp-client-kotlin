@@ -1,0 +1,307 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>WaitForConditions</title>
+<link href="../../../../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script><script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script><link href="../../../styles/style.css" rel="Stylesheet"><link href="../../../styles/logo-styles.css" rel="Stylesheet"><link href="../../../styles/jetbrains-mono.css" rel="Stylesheet"><link href="../../../styles/main.css" rel="Stylesheet"><script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script><script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script><script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script><script type="text/javascript" src="../../../scripts/main.js" async="async"></script>  </head>
+  <body>
+    <div id="container">
+      <div id="leftColumn"><a href="../../../index.html">
+          <div id="logo"></div>
+        </a>
+        <div id="paneSearch"></div>
+        <div id="sideMenu"></div>
+      </div>
+      <div id="main">
+        <div id="leftToggler"><span class="icon-toggler"></span></div>
+<script type="text/javascript" src="../../../scripts/main.js"></script>        <div class="main-content" id="content" pageIds="mailslurp-client-kotlin::com.mailslurp.models/WaitForConditions///PointingToDeclaration//1532069334">
+          <div class="navigation-wrapper" id="navigation-wrapper">
+            <div class="breadcrumbs"><a href="../../../index.html">mailslurp-client-kotlin</a>/<a href="../index.html">com.mailslurp.models</a>/<a href="index.html">WaitForConditions</a></div>
+            <div class="pull-right d-flex">
+              <div id="searchBar"></div>
+            </div>
+          </div>
+          <div class="cover ">
+            <h1 class="cover"><span>Wait</span><wbr></wbr><span>For</span><wbr></wbr><span>Conditions</span></h1>
+            <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><div class="symbol monospace">public final class <a href="index.html">WaitForConditions</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Conditions that a <code>waitForXEmails</code> endpoint operates on. The methods wait until given conditions are met or a timeout is reached. If the conditions are met without needing to wait the results will be returned immediately.</p></div></div>
+          </div>
+          <div class="tabbedcontent">
+            <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Types">Types</button><button class="section-tab" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button><button class="section-tab" data-togglable="Parameters">Parameters</button></div>
+            <div class="tabs-section-body">
+              <h2 class="">Parameters</h2>
+              <div data-togglable="Parameters">
+                <div class="platform-hinted WithExtraAttributes" data-platform-hinted="data-platform-hinted" data-togglable="Parameters"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><div data-togglable="Parameters"><div class="table" data-togglable="Parameters"><div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex">count</span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">Number of results that should match conditions. Either exactly or at least this amount based on the <code>countType</code>. If count condition is not met and the timeout has not been reached the <code>waitFor</code> method will retry the operation.</p></div></div></div></div></div><div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex">countType</span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">How should the found count be compared to the expected count.</p></div></div></div></div></div><div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex">inboxId</span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">ID of inbox to search within and apply conditions to. Essentially filtering the emails found to give a count.</p></div></div></div></div></div><div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex">matches</span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">Conditions that should be matched for an email to qualify for results. Each condition will be applied in order to each email within an inbox to filter a result list of matching emails you are waiting for.</p></div></div></div></div></div><div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex">sortDirection</span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">Direction to sort matching emails by created time</p></div></div></div></div></div><div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex">timeout</span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">Max time in milliseconds to retry the <code>waitFor</code> operation until conditions are met.</p></div></div></div></div></div><div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex">unreadOnly</span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">Apply conditions only to unread emails. All emails begin with <code>read=false</code>. An email is marked <code>read=true</code> when an <code>EmailDto</code> representation of it has been returned to the user at least once. For example you have called <code>getEmail</code> or <code>waitForLatestEmail</code> etc., or you have viewed the email in the dashboard.</p></div></div></div></div></div></div></div></div></div>
+              </div>
+              <h2 class="tabbedcontent">Constructors</h2>
+              <div class="table" data-togglable="Constructors"><a data-name="%5Bcom.mailslurp.models%2FWaitForConditions%2FWaitForConditions%2F%23kotlin.Int%3F%23com.mailslurp.models.WaitForConditions.CountType%3F%23java.util.UUID%3F%23kotlin.Array%5Bcom.mailslurp.models.MatchOption%5D%3F%23com.mailslurp.models.WaitForConditions.SortDirection%3F%23kotlin.Long%3F%23kotlin.Boolean%3F%2FPointingToDeclaration%2F%5D%2FConstructors%2F1532069334" anchor-label="WaitForConditions" id="%5Bcom.mailslurp.models%2FWaitForConditions%2FWaitForConditions%2F%23kotlin.Int%3F%23com.mailslurp.models.WaitForConditions.CountType%3F%23java.util.UUID%3F%23kotlin.Array%5Bcom.mailslurp.models.MatchOption%5D%3F%23com.mailslurp.models.WaitForConditions.SortDirection%3F%23kotlin.Long%3F%23kotlin.Boolean%3F%2FPointingToDeclaration%2F%5D%2FConstructors%2F1532069334" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue TabbedContent">
+                    <div class=""><span class="inline-flex"><a href="-wait-for-conditions.html">WaitForConditions</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FWaitForConditions%2FWaitForConditions%2F%23kotlin.Int%3F%23com.mailslurp.models.WaitForConditions.CountType%3F%23java.util.UUID%3F%23kotlin.Array%5Bcom.mailslurp.models.MatchOption%5D%3F%23com.mailslurp.models.WaitForConditions.SortDirection%3F%23kotlin.Long%3F%23kotlin.Boolean%3F%2FPointingToDeclaration%2F%5D%2FConstructors%2F1532069334"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><div class="symbol monospace block"><a href="index.html">WaitForConditions</a> <a href="-wait-for-conditions.html">WaitForConditions</a>(<span>@<span data-unresolved-link="com.squareup.moshi/Json///PointingToDeclaration/">Json</span>(<span>name = <span class="breakable-word">count</span></span><wbr></wbr>) </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html">Integer</a> count, <span>@<span data-unresolved-link="com.squareup.moshi/Json///PointingToDeclaration/">Json</span>(<span>name = <span class="breakable-word">countType</span></span><wbr></wbr>) </span><a href="-count-type/index.html">WaitForConditions.CountType</a> countType, <span>@<span data-unresolved-link="com.squareup.moshi/Json///PointingToDeclaration/">Json</span>(<span>name = <span class="breakable-word">inboxId</span></span><wbr></wbr>) </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html">UUID</a> inboxId, <span>@<span data-unresolved-link="com.squareup.moshi/Json///PointingToDeclaration/">Json</span>(<span>name = <span class="breakable-word">matches</span></span><wbr></wbr>) </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a>&lt;<a href="../-match-option/index.html">MatchOption</a>&gt; matches, <span>@<span data-unresolved-link="com.squareup.moshi/Json///PointingToDeclaration/">Json</span>(<span>name = <span class="breakable-word">sortDirection</span></span><wbr></wbr>) </span><a href="-sort-direction/index.html">WaitForConditions.SortDirection</a> sortDirection, <span>@<span data-unresolved-link="com.squareup.moshi/Json///PointingToDeclaration/">Json</span>(<span>name = <span class="breakable-word">timeout</span></span><wbr></wbr>) </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html">Long</a> timeout, <span>@<span data-unresolved-link="com.squareup.moshi/Json///PointingToDeclaration/">Json</span>(<span>name = <span class="breakable-word">unreadOnly</span></span><wbr></wbr>) </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html">Boolean</a> unreadOnly)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief ">Number of results that should match conditions.</div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="">Types</h2>
+              <div class="table" data-togglable="Types"><a data-name="%5Bcom.mailslurp.models%2FWaitForConditions.CountType%2F%2F%2FPointingToDeclaration%2F%5D%2FClasslikes%2F1532069334" anchor-label="CountType" id="%5Bcom.mailslurp.models%2FWaitForConditions.CountType%2F%2F%2FPointingToDeclaration%2F%5D%2FClasslikes%2F1532069334" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="-count-type/index.html">CountType</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FWaitForConditions.CountType%2F%2F%2FPointingToDeclaration%2F%5D%2FClasslikes%2F1532069334"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><div class="symbol monospace">public enum <a href="-count-type/index.html">CountType</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Enum.html">Enum</a>&lt;<a href="-count-type/index.html">WaitForConditions.CountType</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="%5Bcom.mailslurp.models%2FWaitForConditions.CountType%2F%2F%2FPointingToDeclaration%2F%5D%2FClasslikes%2F1532069334" anchor-label="CountType" id="%5Bcom.mailslurp.models%2FWaitForConditions.CountType%2F%2F%2FPointingToDeclaration%2F%5D%2FClasslikes%2F1532069334" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FWaitForConditions.CountType%2F%2F%2FPointingToDeclaration%2F%5D%2FClasslikes%2F1532069334" anchor-label="CountType" id="%5Bcom.mailslurp.models%2FWaitForConditions.CountType%2F%2F%2FPointingToDeclaration%2F%5D%2FClasslikes%2F1532069334" data-filterable-set="mailslurp-client-kotlin/JVM"></a>How should the found count be compared to the expected count.</div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.mailslurp.models%2FWaitForConditions.SortDirection%2F%2F%2FPointingToDeclaration%2F%5D%2FClasslikes%2F1532069334" anchor-label="SortDirection" id="%5Bcom.mailslurp.models%2FWaitForConditions.SortDirection%2F%2F%2FPointingToDeclaration%2F%5D%2FClasslikes%2F1532069334" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="-sort-direction/index.html">SortDirection</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FWaitForConditions.SortDirection%2F%2F%2FPointingToDeclaration%2F%5D%2FClasslikes%2F1532069334"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><div class="symbol monospace">public enum <a href="-sort-direction/index.html">SortDirection</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Enum.html">Enum</a>&lt;<a href="-sort-direction/index.html">WaitForConditions.SortDirection</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="%5Bcom.mailslurp.models%2FWaitForConditions.SortDirection%2F%2F%2FPointingToDeclaration%2F%5D%2FClasslikes%2F1532069334" anchor-label="SortDirection" id="%5Bcom.mailslurp.models%2FWaitForConditions.SortDirection%2F%2F%2FPointingToDeclaration%2F%5D%2FClasslikes%2F1532069334" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FWaitForConditions.SortDirection%2F%2F%2FPointingToDeclaration%2F%5D%2FClasslikes%2F1532069334" anchor-label="SortDirection" id="%5Bcom.mailslurp.models%2FWaitForConditions.SortDirection%2F%2F%2FPointingToDeclaration%2F%5D%2FClasslikes%2F1532069334" data-filterable-set="mailslurp-client-kotlin/JVM"></a>Direction to sort matching emails by created time Values: aSC,dESC</div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="">Functions</h2>
+              <div class="table" data-togglable="Functions"><a data-name="%5Bcom.mailslurp.models%2FWaitForConditions%2FgetCount%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F1532069334" anchor-label="getCount" id="%5Bcom.mailslurp.models%2FWaitForConditions%2FgetCount%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F1532069334" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="get-count.html">getCount</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FWaitForConditions%2FgetCount%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F1532069334"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><div class="symbol monospace block">final <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html">Integer</a> <a href="get-count.html">getCount</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="%5Bcom.mailslurp.models%2FWaitForConditions%2FgetCount%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F1532069334" anchor-label="getCount" id="%5Bcom.mailslurp.models%2FWaitForConditions%2FgetCount%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F1532069334" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FWaitForConditions%2FgetCount%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F1532069334" anchor-label="getCount" id="%5Bcom.mailslurp.models%2FWaitForConditions%2FgetCount%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F1532069334" data-filterable-set="mailslurp-client-kotlin/JVM"></a>Number of results that should match conditions.</div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.mailslurp.models%2FWaitForConditions%2FgetCountType%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F1532069334" anchor-label="getCountType" id="%5Bcom.mailslurp.models%2FWaitForConditions%2FgetCountType%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F1532069334" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="get-count-type.html">getCountType</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FWaitForConditions%2FgetCountType%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F1532069334"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><div class="symbol monospace block">final <a href="-count-type/index.html">WaitForConditions.CountType</a> <a href="get-count-type.html">getCountType</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="%5Bcom.mailslurp.models%2FWaitForConditions%2FgetCountType%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F1532069334" anchor-label="getCountType" id="%5Bcom.mailslurp.models%2FWaitForConditions%2FgetCountType%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F1532069334" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FWaitForConditions%2FgetCountType%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F1532069334" anchor-label="getCountType" id="%5Bcom.mailslurp.models%2FWaitForConditions%2FgetCountType%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F1532069334" data-filterable-set="mailslurp-client-kotlin/JVM"></a>How should the found count be compared to the expected count.</div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.mailslurp.models%2FWaitForConditions%2FgetInboxId%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F1532069334" anchor-label="getInboxId" id="%5Bcom.mailslurp.models%2FWaitForConditions%2FgetInboxId%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F1532069334" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="get-inbox-id.html">getInboxId</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FWaitForConditions%2FgetInboxId%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F1532069334"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><div class="symbol monospace block">final <a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html">UUID</a> <a href="get-inbox-id.html">getInboxId</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="%5Bcom.mailslurp.models%2FWaitForConditions%2FgetInboxId%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F1532069334" anchor-label="getInboxId" id="%5Bcom.mailslurp.models%2FWaitForConditions%2FgetInboxId%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F1532069334" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FWaitForConditions%2FgetInboxId%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F1532069334" anchor-label="getInboxId" id="%5Bcom.mailslurp.models%2FWaitForConditions%2FgetInboxId%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F1532069334" data-filterable-set="mailslurp-client-kotlin/JVM"></a>ID of inbox to search within and apply conditions to.</div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.mailslurp.models%2FWaitForConditions%2FgetMatches%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F1532069334" anchor-label="getMatches" id="%5Bcom.mailslurp.models%2FWaitForConditions%2FgetMatches%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F1532069334" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="get-matches.html">getMatches</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FWaitForConditions%2FgetMatches%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F1532069334"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><div class="symbol monospace block">final <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a>&lt;<a href="../-match-option/index.html">MatchOption</a>&gt; <a href="get-matches.html">getMatches</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="%5Bcom.mailslurp.models%2FWaitForConditions%2FgetMatches%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F1532069334" anchor-label="getMatches" id="%5Bcom.mailslurp.models%2FWaitForConditions%2FgetMatches%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F1532069334" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FWaitForConditions%2FgetMatches%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F1532069334" anchor-label="getMatches" id="%5Bcom.mailslurp.models%2FWaitForConditions%2FgetMatches%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F1532069334" data-filterable-set="mailslurp-client-kotlin/JVM"></a>Conditions that should be matched for an email to qualify for results.</div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.mailslurp.models%2FWaitForConditions%2FgetSortDirection%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F1532069334" anchor-label="getSortDirection" id="%5Bcom.mailslurp.models%2FWaitForConditions%2FgetSortDirection%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F1532069334" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="get-sort-direction.html">getSortDirection</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FWaitForConditions%2FgetSortDirection%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F1532069334"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><div class="symbol monospace block">final <a href="-sort-direction/index.html">WaitForConditions.SortDirection</a> <a href="get-sort-direction.html">getSortDirection</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="%5Bcom.mailslurp.models%2FWaitForConditions%2FgetSortDirection%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F1532069334" anchor-label="getSortDirection" id="%5Bcom.mailslurp.models%2FWaitForConditions%2FgetSortDirection%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F1532069334" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FWaitForConditions%2FgetSortDirection%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F1532069334" anchor-label="getSortDirection" id="%5Bcom.mailslurp.models%2FWaitForConditions%2FgetSortDirection%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F1532069334" data-filterable-set="mailslurp-client-kotlin/JVM"></a>Direction to sort matching emails by created time</div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.mailslurp.models%2FWaitForConditions%2FgetTimeout%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F1532069334" anchor-label="getTimeout" id="%5Bcom.mailslurp.models%2FWaitForConditions%2FgetTimeout%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F1532069334" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="get-timeout.html">getTimeout</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FWaitForConditions%2FgetTimeout%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F1532069334"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><div class="symbol monospace block">final <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html">Long</a> <a href="get-timeout.html">getTimeout</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="%5Bcom.mailslurp.models%2FWaitForConditions%2FgetTimeout%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F1532069334" anchor-label="getTimeout" id="%5Bcom.mailslurp.models%2FWaitForConditions%2FgetTimeout%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F1532069334" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FWaitForConditions%2FgetTimeout%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F1532069334" anchor-label="getTimeout" id="%5Bcom.mailslurp.models%2FWaitForConditions%2FgetTimeout%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F1532069334" data-filterable-set="mailslurp-client-kotlin/JVM"></a>Max time in milliseconds to retry the <code>waitFor</code> operation until conditions are met.</div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.mailslurp.models%2FWaitForConditions%2FgetUnreadOnly%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F1532069334" anchor-label="getUnreadOnly" id="%5Bcom.mailslurp.models%2FWaitForConditions%2FgetUnreadOnly%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F1532069334" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="get-unread-only.html">getUnreadOnly</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FWaitForConditions%2FgetUnreadOnly%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F1532069334"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><div class="symbol monospace block">final <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html">Boolean</a> <a href="get-unread-only.html">getUnreadOnly</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="%5Bcom.mailslurp.models%2FWaitForConditions%2FgetUnreadOnly%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F1532069334" anchor-label="getUnreadOnly" id="%5Bcom.mailslurp.models%2FWaitForConditions%2FgetUnreadOnly%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F1532069334" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FWaitForConditions%2FgetUnreadOnly%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F1532069334" anchor-label="getUnreadOnly" id="%5Bcom.mailslurp.models%2FWaitForConditions%2FgetUnreadOnly%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F1532069334" data-filterable-set="mailslurp-client-kotlin/JVM"></a>Apply conditions only to unread emails.</div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="">Properties</h2>
+              <div class="table" data-togglable="Properties"><a data-name="%5Bcom.mailslurp.models%2FWaitForConditions%2Fcount%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334" anchor-label="count" id="%5Bcom.mailslurp.models%2FWaitForConditions%2Fcount%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="index.html#%5Bcom.mailslurp.models%2FWaitForConditions%2Fcount%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334">count</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FWaitForConditions%2Fcount%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><a data-name="%5Bcom.mailslurp.models%2FWaitForConditions%2Fcount%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334" anchor-label="count" id="%5Bcom.mailslurp.models%2FWaitForConditions%2Fcount%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="symbol monospace block">private final <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html">Integer</a> <a href="index.html#%5Bcom.mailslurp.models%2FWaitForConditions%2Fcount%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334">count</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FWaitForConditions%2Fcount%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334" anchor-label="count" id="%5Bcom.mailslurp.models%2FWaitForConditions%2Fcount%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334" data-filterable-set="mailslurp-client-kotlin/JVM"></a>Number of results that should match conditions.</div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.mailslurp.models%2FWaitForConditions%2FcountType%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334" anchor-label="countType" id="%5Bcom.mailslurp.models%2FWaitForConditions%2FcountType%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="index.html#%5Bcom.mailslurp.models%2FWaitForConditions%2FcountType%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334">countType</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FWaitForConditions%2FcountType%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><a data-name="%5Bcom.mailslurp.models%2FWaitForConditions%2FcountType%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334" anchor-label="countType" id="%5Bcom.mailslurp.models%2FWaitForConditions%2FcountType%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="symbol monospace block">private final <a href="-count-type/index.html">WaitForConditions.CountType</a> <a href="index.html#%5Bcom.mailslurp.models%2FWaitForConditions%2FcountType%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334">countType</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FWaitForConditions%2FcountType%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334" anchor-label="countType" id="%5Bcom.mailslurp.models%2FWaitForConditions%2FcountType%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334" data-filterable-set="mailslurp-client-kotlin/JVM"></a>How should the found count be compared to the expected count.</div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.mailslurp.models%2FWaitForConditions%2FinboxId%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334" anchor-label="inboxId" id="%5Bcom.mailslurp.models%2FWaitForConditions%2FinboxId%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="index.html#%5Bcom.mailslurp.models%2FWaitForConditions%2FinboxId%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334">inboxId</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FWaitForConditions%2FinboxId%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><a data-name="%5Bcom.mailslurp.models%2FWaitForConditions%2FinboxId%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334" anchor-label="inboxId" id="%5Bcom.mailslurp.models%2FWaitForConditions%2FinboxId%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="symbol monospace block">private final <a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html">UUID</a> <a href="index.html#%5Bcom.mailslurp.models%2FWaitForConditions%2FinboxId%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334">inboxId</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FWaitForConditions%2FinboxId%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334" anchor-label="inboxId" id="%5Bcom.mailslurp.models%2FWaitForConditions%2FinboxId%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334" data-filterable-set="mailslurp-client-kotlin/JVM"></a>ID of inbox to search within and apply conditions to.</div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.mailslurp.models%2FWaitForConditions%2Fmatches%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334" anchor-label="matches" id="%5Bcom.mailslurp.models%2FWaitForConditions%2Fmatches%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="index.html#%5Bcom.mailslurp.models%2FWaitForConditions%2Fmatches%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334">matches</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FWaitForConditions%2Fmatches%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><a data-name="%5Bcom.mailslurp.models%2FWaitForConditions%2Fmatches%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334" anchor-label="matches" id="%5Bcom.mailslurp.models%2FWaitForConditions%2Fmatches%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="symbol monospace block">private final <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a>&lt;<a href="../-match-option/index.html">MatchOption</a>&gt; <a href="index.html#%5Bcom.mailslurp.models%2FWaitForConditions%2Fmatches%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334">matches</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FWaitForConditions%2Fmatches%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334" anchor-label="matches" id="%5Bcom.mailslurp.models%2FWaitForConditions%2Fmatches%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334" data-filterable-set="mailslurp-client-kotlin/JVM"></a>Conditions that should be matched for an email to qualify for results.</div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.mailslurp.models%2FWaitForConditions%2FsortDirection%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334" anchor-label="sortDirection" id="%5Bcom.mailslurp.models%2FWaitForConditions%2FsortDirection%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="index.html#%5Bcom.mailslurp.models%2FWaitForConditions%2FsortDirection%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334">sortDirection</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FWaitForConditions%2FsortDirection%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><a data-name="%5Bcom.mailslurp.models%2FWaitForConditions%2FsortDirection%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334" anchor-label="sortDirection" id="%5Bcom.mailslurp.models%2FWaitForConditions%2FsortDirection%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="symbol monospace block">private final <a href="-sort-direction/index.html">WaitForConditions.SortDirection</a> <a href="index.html#%5Bcom.mailslurp.models%2FWaitForConditions%2FsortDirection%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334">sortDirection</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FWaitForConditions%2FsortDirection%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334" anchor-label="sortDirection" id="%5Bcom.mailslurp.models%2FWaitForConditions%2FsortDirection%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334" data-filterable-set="mailslurp-client-kotlin/JVM"></a>Direction to sort matching emails by created time</div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.mailslurp.models%2FWaitForConditions%2Ftimeout%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334" anchor-label="timeout" id="%5Bcom.mailslurp.models%2FWaitForConditions%2Ftimeout%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="index.html#%5Bcom.mailslurp.models%2FWaitForConditions%2Ftimeout%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334">timeout</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FWaitForConditions%2Ftimeout%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><a data-name="%5Bcom.mailslurp.models%2FWaitForConditions%2Ftimeout%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334" anchor-label="timeout" id="%5Bcom.mailslurp.models%2FWaitForConditions%2Ftimeout%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="symbol monospace block">private final <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html">Long</a> <a href="index.html#%5Bcom.mailslurp.models%2FWaitForConditions%2Ftimeout%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334">timeout</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FWaitForConditions%2Ftimeout%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334" anchor-label="timeout" id="%5Bcom.mailslurp.models%2FWaitForConditions%2Ftimeout%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334" data-filterable-set="mailslurp-client-kotlin/JVM"></a>Max time in milliseconds to retry the <code>waitFor</code> operation until conditions are met.</div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.mailslurp.models%2FWaitForConditions%2FunreadOnly%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334" anchor-label="unreadOnly" id="%5Bcom.mailslurp.models%2FWaitForConditions%2FunreadOnly%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="index.html#%5Bcom.mailslurp.models%2FWaitForConditions%2FunreadOnly%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334">unreadOnly</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FWaitForConditions%2FunreadOnly%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><a data-name="%5Bcom.mailslurp.models%2FWaitForConditions%2FunreadOnly%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334" anchor-label="unreadOnly" id="%5Bcom.mailslurp.models%2FWaitForConditions%2FunreadOnly%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="symbol monospace block">private final <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html">Boolean</a> <a href="index.html#%5Bcom.mailslurp.models%2FWaitForConditions%2FunreadOnly%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334">unreadOnly</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FWaitForConditions%2FunreadOnly%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334" anchor-label="unreadOnly" id="%5Bcom.mailslurp.models%2FWaitForConditions%2FunreadOnly%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F1532069334" data-filterable-set="mailslurp-client-kotlin/JVM"></a>Apply conditions only to unread emails.</div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer"><span class="go-to-top-icon"><a href="#content"></a></span><span>© 2021 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span></div>
+      </div>
+    </div>
+  </body>
+</html>
+
