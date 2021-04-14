@@ -1,0 +1,530 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>SendEmailOptions</title>
+<link href="../../../../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script><script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script><link href="../../../styles/style.css" rel="Stylesheet"><link href="../../../styles/logo-styles.css" rel="Stylesheet"><link href="../../../styles/jetbrains-mono.css" rel="Stylesheet"><link href="../../../styles/main.css" rel="Stylesheet"><script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script><script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script><script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script><script type="text/javascript" src="../../../scripts/main.js" async="async"></script>  </head>
+  <body>
+    <div id="container">
+      <div id="leftColumn"><a href="../../../index.html">
+          <div id="logo"></div>
+        </a>
+        <div id="paneSearch"></div>
+        <div id="sideMenu"></div>
+      </div>
+      <div id="main">
+        <div id="leftToggler"><span class="icon-toggler"></span></div>
+<script type="text/javascript" src="../../../scripts/main.js"></script>        <div class="main-content" id="content" pageIds="mailslurp-client-kotlin::com.mailslurp.models/SendEmailOptions///PointingToDeclaration//-2042795102">
+          <div class="navigation-wrapper" id="navigation-wrapper">
+            <div class="breadcrumbs"><a href="../../../index.html">mailslurp-client-kotlin</a>/<a href="../index.html">com.mailslurp.models</a>/<a href="index.html">SendEmailOptions</a></div>
+            <div class="pull-right d-flex">
+              <div id="searchBar"></div>
+            </div>
+          </div>
+          <div class="cover ">
+            <h1 class="cover"><span>Send</span><wbr></wbr><span>Email</span><wbr></wbr><span>Options</span></h1>
+            <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><div class="symbol monospace">public final class <a href="index.html">SendEmailOptions</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Options for sending an email message from an inbox. You must provide one of: <code>to</code>, <code>toGroup</code>, or <code>toContacts</code> to send an email. All other parameters are optional.</p></div></div>
+          </div>
+          <div class="tabbedcontent">
+            <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Types">Types</button><button class="section-tab" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button><button class="section-tab" data-togglable="Parameters">Parameters</button></div>
+            <div class="tabs-section-body">
+              <h2 class="">Parameters</h2>
+              <div data-togglable="Parameters">
+                <div class="platform-hinted WithExtraAttributes" data-platform-hinted="data-platform-hinted" data-togglable="Parameters"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><div data-togglable="Parameters"><div class="table" data-togglable="Parameters"><div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex">attachments</span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">Optional list of attachment IDs to send with this email. You must first upload each attachment separately in order to obtain attachment IDs. This way you can reuse attachments with different emails once uploaded.</p></div></div></div></div></div><div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex">bcc</span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">Optional list of bcc destination email addresses</p></div></div></div></div></div><div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex">body</span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">Optional contents of email. If body contains HTML then set <code>isHTML</code> to true to ensure that email clients render it correctly. You can use moustache template syntax in the email body in conjunction with <code>toGroup</code> contact variables or <code>templateVariables</code> data. If you need more templating control consider creating a template and using the <code>template</code> property instead of the body.</p></div></div></div></div></div><div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex">cc</span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">Optional list of cc destination email addresses</p></div></div></div></div></div><div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex">charset</span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">Optional charset</p></div></div></div></div></div><div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex">from</span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">Optional from address. If not set the source inbox address will be used for this field. Beware of potential spam penalties when setting this field to an address not used by the inbox. For custom email addresses use a custom domain.</p></div></div></div></div></div><div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex">isHTML</span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">Optional HTML flag. If true the <code>content-type</code> of the email will be <code>text/html</code>. Set to true when sending HTML to ensure proper rending on email clients</p></div></div></div></div></div><div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex">replyTo</span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">Optional replyTo header</p></div></div></div></div></div><div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex">sendStrategy</span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">Optional strategy to use when sending the email</p></div></div></div></div></div><div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex">subject</span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">Optional email subject line</p></div></div></div></div></div><div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex">template</span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">Optional template ID to use for body. Will override body if provided. When using a template make sure you pass the corresponding map of <code>templateVariables</code>. You can find which variables are needed by fetching the template itself or viewing it in the dashboard.</p></div></div></div></div></div><div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex">templateVariables</span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">Optional map of template variables. Will replace moustache syntax variables in subject and body or template with the associated values if found.</p></div></div></div></div></div><div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex">to</span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">List of destination email addresses. Even single recipients must be in array form. Maximum recipients per email depends on your plan. If you need to send many emails try using contacts or contact groups or use a non standard sendStrategy to ensure that spam filters are not triggered (many recipients in one email can affect your spam rating).</p></div></div></div></div></div><div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex">toContacts</span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">Optional list of contact IDs to send email to. Manage your contacts via the API or dashboard. When contacts are used the email is sent to each contact separately so they will not see other recipients.</p></div></div></div></div></div><div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex">toGroup</span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">Optional contact group ID to send email to. You can create contacts and contact groups in the API or dashboard and use them for email campaigns. When contact groups are used the email is sent to each contact separately so they will not see other recipients</p></div></div></div></div></div></div></div></div></div>
+              </div>
+              <h2 class="tabbedcontent">Constructors</h2>
+              <div class="table" data-togglable="Constructors"><a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FSendEmailOptions%2F%23kotlin.Array%5Bkotlin.String%5D%3F%23kotlin.Array%5Bkotlin.String%5D%3F%23kotlin.String%3F%23kotlin.Array%5Bkotlin.String%5D%3F%23kotlin.String%3F%23kotlin.String%3F%23kotlin.Boolean%3F%23kotlin.String%3F%23com.mailslurp.models.SendEmailOptions.SendStrategy%3F%23kotlin.String%3F%23java.util.UUID%3F%23kotlin.Any%3F%23kotlin.Array%5Bkotlin.String%5D%3F%23kotlin.Array%5Bjava.util.UUID%5D%3F%23java.util.UUID%3F%2FPointingToDeclaration%2F%5D%2FConstructors%2F-2042795102" anchor-label="SendEmailOptions" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FSendEmailOptions%2F%23kotlin.Array%5Bkotlin.String%5D%3F%23kotlin.Array%5Bkotlin.String%5D%3F%23kotlin.String%3F%23kotlin.Array%5Bkotlin.String%5D%3F%23kotlin.String%3F%23kotlin.String%3F%23kotlin.Boolean%3F%23kotlin.String%3F%23com.mailslurp.models.SendEmailOptions.SendStrategy%3F%23kotlin.String%3F%23java.util.UUID%3F%23kotlin.Any%3F%23kotlin.Array%5Bkotlin.String%5D%3F%23kotlin.Array%5Bjava.util.UUID%5D%3F%23java.util.UUID%3F%2FPointingToDeclaration%2F%5D%2FConstructors%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue TabbedContent">
+                    <div class=""><span class="inline-flex"><a href="-send-email-options.html">SendEmailOptions</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FSendEmailOptions%2FSendEmailOptions%2F%23kotlin.Array%5Bkotlin.String%5D%3F%23kotlin.Array%5Bkotlin.String%5D%3F%23kotlin.String%3F%23kotlin.Array%5Bkotlin.String%5D%3F%23kotlin.String%3F%23kotlin.String%3F%23kotlin.Boolean%3F%23kotlin.String%3F%23com.mailslurp.models.SendEmailOptions.SendStrategy%3F%23kotlin.String%3F%23java.util.UUID%3F%23kotlin.Any%3F%23kotlin.Array%5Bkotlin.String%5D%3F%23kotlin.Array%5Bjava.util.UUID%5D%3F%23java.util.UUID%3F%2FPointingToDeclaration%2F%5D%2FConstructors%2F-2042795102"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><div class="symbol monospace block"><a href="index.html">SendEmailOptions</a> <a href="-send-email-options.html">SendEmailOptions</a>(<span>@<span data-unresolved-link="com.squareup.moshi/Json///PointingToDeclaration/">Json</span>(<span>name = <span class="breakable-word">attachments</span></span><wbr></wbr>) </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a>&gt; attachments, <span>@<span data-unresolved-link="com.squareup.moshi/Json///PointingToDeclaration/">Json</span>(<span>name = <span class="breakable-word">bcc</span></span><wbr></wbr>) </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a>&gt; bcc, <span>@<span data-unresolved-link="com.squareup.moshi/Json///PointingToDeclaration/">Json</span>(<span>name = <span class="breakable-word">body</span></span><wbr></wbr>) </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a> body, <span>@<span data-unresolved-link="com.squareup.moshi/Json///PointingToDeclaration/">Json</span>(<span>name = <span class="breakable-word">cc</span></span><wbr></wbr>) </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a>&gt; cc, <span>@<span data-unresolved-link="com.squareup.moshi/Json///PointingToDeclaration/">Json</span>(<span>name = <span class="breakable-word">charset</span></span><wbr></wbr>) </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a> charset, <span>@<span data-unresolved-link="com.squareup.moshi/Json///PointingToDeclaration/">Json</span>(<span>name = <span class="breakable-word">from</span></span><wbr></wbr>) </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a> from, <span>@<span data-unresolved-link="com.squareup.moshi/Json///PointingToDeclaration/">Json</span>(<span>name = <span class="breakable-word">isHTML</span></span><wbr></wbr>) </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html">Boolean</a> isHTML, <span>@<span data-unresolved-link="com.squareup.moshi/Json///PointingToDeclaration/">Json</span>(<span>name = <span class="breakable-word">replyTo</span></span><wbr></wbr>) </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a> replyTo, <span>@<span data-unresolved-link="com.squareup.moshi/Json///PointingToDeclaration/">Json</span>(<span>name = <span class="breakable-word">sendStrategy</span></span><wbr></wbr>) </span><a href="-send-strategy/index.html">SendEmailOptions.SendStrategy</a> sendStrategy, <span>@<span data-unresolved-link="com.squareup.moshi/Json///PointingToDeclaration/">Json</span>(<span>name = <span class="breakable-word">subject</span></span><wbr></wbr>) </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a> subject, <span>@<span data-unresolved-link="com.squareup.moshi/Json///PointingToDeclaration/">Json</span>(<span>name = <span class="breakable-word">template</span></span><wbr></wbr>) </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html">UUID</a> template, <span>@<span data-unresolved-link="com.squareup.moshi/Json///PointingToDeclaration/">Json</span>(<span>name = <span class="breakable-word">templateVariables</span></span><wbr></wbr>) </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html">Object</a> templateVariables, <span>@<span data-unresolved-link="com.squareup.moshi/Json///PointingToDeclaration/">Json</span>(<span>name = <span class="breakable-word">to</span></span><wbr></wbr>) </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a>&gt; to, <span>@<span data-unresolved-link="com.squareup.moshi/Json///PointingToDeclaration/">Json</span>(<span>name = <span class="breakable-word">toContacts</span></span><wbr></wbr>) </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html">UUID</a>&gt; toContacts, <span>@<span data-unresolved-link="com.squareup.moshi/Json///PointingToDeclaration/">Json</span>(<span>name = <span class="breakable-word">toGroup</span></span><wbr></wbr>) </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html">UUID</a> toGroup)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief ">Optional list of attachment IDs to send with this email.</div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="">Types</h2>
+              <div class="table" data-togglable="Types"><a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions.SendStrategy%2F%2F%2FPointingToDeclaration%2F%5D%2FClasslikes%2F-2042795102" anchor-label="SendStrategy" id="%5Bcom.mailslurp.models%2FSendEmailOptions.SendStrategy%2F%2F%2FPointingToDeclaration%2F%5D%2FClasslikes%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="-send-strategy/index.html">SendStrategy</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FSendEmailOptions.SendStrategy%2F%2F%2FPointingToDeclaration%2F%5D%2FClasslikes%2F-2042795102"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><div class="symbol monospace">public enum <a href="-send-strategy/index.html">SendStrategy</a> extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Enum.html">Enum</a>&lt;<a href="-send-strategy/index.html">SendEmailOptions.SendStrategy</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions.SendStrategy%2F%2F%2FPointingToDeclaration%2F%5D%2FClasslikes%2F-2042795102" anchor-label="SendStrategy" id="%5Bcom.mailslurp.models%2FSendEmailOptions.SendStrategy%2F%2F%2FPointingToDeclaration%2F%5D%2FClasslikes%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions.SendStrategy%2F%2F%2FPointingToDeclaration%2F%5D%2FClasslikes%2F-2042795102" anchor-label="SendStrategy" id="%5Bcom.mailslurp.models%2FSendEmailOptions.SendStrategy%2F%2F%2FPointingToDeclaration%2F%5D%2FClasslikes%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>Optional strategy to use when sending the email Values: sINGLEMESSAGE</div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="">Functions</h2>
+              <div class="table" data-togglable="Functions"><a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetAttachments%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getAttachments" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetAttachments%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="get-attachments.html">getAttachments</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetAttachments%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><div class="symbol monospace block">final <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a>&gt; <a href="get-attachments.html">getAttachments</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetAttachments%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getAttachments" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetAttachments%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetAttachments%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getAttachments" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetAttachments%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>Optional list of attachment IDs to send with this email.</div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetBcc%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getBcc" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetBcc%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="get-bcc.html">getBcc</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetBcc%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><div class="symbol monospace block">final <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a>&gt; <a href="get-bcc.html">getBcc</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetBcc%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getBcc" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetBcc%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetBcc%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getBcc" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetBcc%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>Optional list of bcc destination email addresses</div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetBody%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getBody" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetBody%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="get-body.html">getBody</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetBody%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><div class="symbol monospace block">final <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a> <a href="get-body.html">getBody</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetBody%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getBody" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetBody%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetBody%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getBody" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetBody%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>Optional contents of email.</div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetCc%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getCc" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetCc%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="get-cc.html">getCc</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetCc%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><div class="symbol monospace block">final <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a>&gt; <a href="get-cc.html">getCc</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetCc%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getCc" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetCc%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetCc%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getCc" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetCc%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>Optional list of cc destination email addresses</div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetCharset%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getCharset" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetCharset%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="get-charset.html">getCharset</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetCharset%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><div class="symbol monospace block">final <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a> <a href="get-charset.html">getCharset</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetCharset%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getCharset" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetCharset%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetCharset%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getCharset" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetCharset%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>Optional charset</div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetFrom%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getFrom" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetFrom%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="get-from.html">getFrom</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetFrom%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><div class="symbol monospace block">final <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a> <a href="get-from.html">getFrom</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetFrom%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getFrom" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetFrom%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetFrom%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getFrom" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetFrom%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>Optional from address.</div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetIsHTML%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getIsHTML" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetIsHTML%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="get-is-h-t-m-l.html">getIsHTML</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetIsHTML%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><div class="symbol monospace block">final <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html">Boolean</a> <a href="get-is-h-t-m-l.html">getIsHTML</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetIsHTML%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getIsHTML" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetIsHTML%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetIsHTML%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getIsHTML" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetIsHTML%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>Optional HTML flag.</div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetReplyTo%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getReplyTo" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetReplyTo%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="get-reply-to.html">getReplyTo</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetReplyTo%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><div class="symbol monospace block">final <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a> <a href="get-reply-to.html">getReplyTo</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetReplyTo%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getReplyTo" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetReplyTo%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetReplyTo%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getReplyTo" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetReplyTo%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>Optional replyTo header</div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetSendStrategy%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getSendStrategy" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetSendStrategy%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="get-send-strategy.html">getSendStrategy</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetSendStrategy%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><div class="symbol monospace block">final <a href="-send-strategy/index.html">SendEmailOptions.SendStrategy</a> <a href="get-send-strategy.html">getSendStrategy</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetSendStrategy%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getSendStrategy" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetSendStrategy%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetSendStrategy%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getSendStrategy" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetSendStrategy%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>Optional strategy to use when sending the email</div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetSubject%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getSubject" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetSubject%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="get-subject.html">getSubject</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetSubject%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><div class="symbol monospace block">final <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a> <a href="get-subject.html">getSubject</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetSubject%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getSubject" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetSubject%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetSubject%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getSubject" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetSubject%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>Optional email subject line</div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetTemplate%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getTemplate" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetTemplate%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="get-template.html">getTemplate</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetTemplate%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><div class="symbol monospace block">final <a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html">UUID</a> <a href="get-template.html">getTemplate</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetTemplate%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getTemplate" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetTemplate%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetTemplate%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getTemplate" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetTemplate%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>Optional template ID to use for body.</div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetTemplateVariables%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getTemplateVariables" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetTemplateVariables%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="get-template-variables.html">getTemplateVariables</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetTemplateVariables%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><div class="symbol monospace block">final <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html">Object</a> <a href="get-template-variables.html">getTemplateVariables</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetTemplateVariables%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getTemplateVariables" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetTemplateVariables%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetTemplateVariables%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getTemplateVariables" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetTemplateVariables%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>Optional map of template variables.</div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetTo%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getTo" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetTo%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="get-to.html">getTo</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetTo%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><div class="symbol monospace block">final <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a>&gt; <a href="get-to.html">getTo</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetTo%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getTo" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetTo%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetTo%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getTo" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetTo%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>List of destination email addresses.</div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetToContacts%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getToContacts" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetToContacts%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="get-to-contacts.html">getToContacts</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetToContacts%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><div class="symbol monospace block">final <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html">UUID</a>&gt; <a href="get-to-contacts.html">getToContacts</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetToContacts%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getToContacts" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetToContacts%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetToContacts%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getToContacts" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetToContacts%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>Optional list of contact IDs to send email to.</div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetToGroup%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getToGroup" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetToGroup%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="get-to-group.html">getToGroup</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetToGroup%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><div class="symbol monospace block">final <a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html">UUID</a> <a href="get-to-group.html">getToGroup</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetToGroup%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getToGroup" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetToGroup%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetToGroup%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getToGroup" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FgetToGroup%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>Optional contact group ID to send email to.</div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="">Properties</h2>
+              <div class="table" data-togglable="Properties"><a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2Fattachments%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="attachments" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2Fattachments%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="index.html#%5Bcom.mailslurp.models%2FSendEmailOptions%2Fattachments%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102">attachments</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FSendEmailOptions%2Fattachments%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2Fattachments%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="attachments" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2Fattachments%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="symbol monospace block">private final <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a>&gt; <a href="index.html#%5Bcom.mailslurp.models%2FSendEmailOptions%2Fattachments%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102">attachments</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2Fattachments%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="attachments" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2Fattachments%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>Optional list of attachment IDs to send with this email.</div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2Fbcc%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="bcc" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2Fbcc%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="index.html#%5Bcom.mailslurp.models%2FSendEmailOptions%2Fbcc%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102">bcc</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FSendEmailOptions%2Fbcc%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2Fbcc%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="bcc" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2Fbcc%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="symbol monospace block">private final <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a>&gt; <a href="index.html#%5Bcom.mailslurp.models%2FSendEmailOptions%2Fbcc%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102">bcc</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2Fbcc%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="bcc" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2Fbcc%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>Optional list of bcc destination email addresses</div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2Fbody%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="body" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2Fbody%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="index.html#%5Bcom.mailslurp.models%2FSendEmailOptions%2Fbody%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102">body</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FSendEmailOptions%2Fbody%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2Fbody%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="body" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2Fbody%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="symbol monospace block">private final <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a> <a href="index.html#%5Bcom.mailslurp.models%2FSendEmailOptions%2Fbody%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102">body</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2Fbody%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="body" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2Fbody%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>Optional contents of email.</div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2Fcc%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="cc" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2Fcc%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="index.html#%5Bcom.mailslurp.models%2FSendEmailOptions%2Fcc%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102">cc</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FSendEmailOptions%2Fcc%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2Fcc%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="cc" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2Fcc%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="symbol monospace block">private final <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a>&gt; <a href="index.html#%5Bcom.mailslurp.models%2FSendEmailOptions%2Fcc%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102">cc</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2Fcc%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="cc" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2Fcc%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>Optional list of cc destination email addresses</div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2Fcharset%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="charset" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2Fcharset%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="index.html#%5Bcom.mailslurp.models%2FSendEmailOptions%2Fcharset%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102">charset</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FSendEmailOptions%2Fcharset%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2Fcharset%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="charset" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2Fcharset%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="symbol monospace block">private final <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a> <a href="index.html#%5Bcom.mailslurp.models%2FSendEmailOptions%2Fcharset%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102">charset</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2Fcharset%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="charset" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2Fcharset%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>Optional charset</div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2Ffrom%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="from" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2Ffrom%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="index.html#%5Bcom.mailslurp.models%2FSendEmailOptions%2Ffrom%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102">from</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FSendEmailOptions%2Ffrom%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2Ffrom%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="from" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2Ffrom%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="symbol monospace block">private final <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a> <a href="index.html#%5Bcom.mailslurp.models%2FSendEmailOptions%2Ffrom%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102">from</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2Ffrom%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="from" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2Ffrom%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>Optional from address.</div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FisHTML%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="isHTML" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FisHTML%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="index.html#%5Bcom.mailslurp.models%2FSendEmailOptions%2FisHTML%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102">isHTML</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FSendEmailOptions%2FisHTML%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FisHTML%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="isHTML" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FisHTML%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="symbol monospace block">private final <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html">Boolean</a> <a href="index.html#%5Bcom.mailslurp.models%2FSendEmailOptions%2FisHTML%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102">isHTML</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FisHTML%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="isHTML" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FisHTML%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>Optional HTML flag.</div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FreplyTo%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="replyTo" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FreplyTo%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="index.html#%5Bcom.mailslurp.models%2FSendEmailOptions%2FreplyTo%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102">replyTo</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FSendEmailOptions%2FreplyTo%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FreplyTo%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="replyTo" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FreplyTo%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="symbol monospace block">private final <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a> <a href="index.html#%5Bcom.mailslurp.models%2FSendEmailOptions%2FreplyTo%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102">replyTo</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FreplyTo%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="replyTo" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FreplyTo%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>Optional replyTo header</div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FsendStrategy%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="sendStrategy" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FsendStrategy%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="index.html#%5Bcom.mailslurp.models%2FSendEmailOptions%2FsendStrategy%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102">sendStrategy</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FSendEmailOptions%2FsendStrategy%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FsendStrategy%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="sendStrategy" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FsendStrategy%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="symbol monospace block">private final <a href="-send-strategy/index.html">SendEmailOptions.SendStrategy</a> <a href="index.html#%5Bcom.mailslurp.models%2FSendEmailOptions%2FsendStrategy%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102">sendStrategy</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FsendStrategy%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="sendStrategy" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FsendStrategy%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>Optional strategy to use when sending the email</div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2Fsubject%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="subject" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2Fsubject%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="index.html#%5Bcom.mailslurp.models%2FSendEmailOptions%2Fsubject%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102">subject</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FSendEmailOptions%2Fsubject%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2Fsubject%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="subject" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2Fsubject%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="symbol monospace block">private final <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a> <a href="index.html#%5Bcom.mailslurp.models%2FSendEmailOptions%2Fsubject%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102">subject</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2Fsubject%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="subject" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2Fsubject%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>Optional email subject line</div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2Ftemplate%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="template" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2Ftemplate%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="index.html#%5Bcom.mailslurp.models%2FSendEmailOptions%2Ftemplate%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102">template</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FSendEmailOptions%2Ftemplate%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2Ftemplate%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="template" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2Ftemplate%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="symbol monospace block">private final <a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html">UUID</a> <a href="index.html#%5Bcom.mailslurp.models%2FSendEmailOptions%2Ftemplate%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102">template</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2Ftemplate%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="template" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2Ftemplate%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>Optional template ID to use for body.</div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FtemplateVariables%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="templateVariables" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FtemplateVariables%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="index.html#%5Bcom.mailslurp.models%2FSendEmailOptions%2FtemplateVariables%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102">templateVariables</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FSendEmailOptions%2FtemplateVariables%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FtemplateVariables%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="templateVariables" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FtemplateVariables%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="symbol monospace block">private final <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html">Object</a> <a href="index.html#%5Bcom.mailslurp.models%2FSendEmailOptions%2FtemplateVariables%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102">templateVariables</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FtemplateVariables%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="templateVariables" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FtemplateVariables%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>Optional map of template variables.</div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2Fto%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="to" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2Fto%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="index.html#%5Bcom.mailslurp.models%2FSendEmailOptions%2Fto%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102">to</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FSendEmailOptions%2Fto%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2Fto%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="to" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2Fto%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="symbol monospace block">private final <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a>&gt; <a href="index.html#%5Bcom.mailslurp.models%2FSendEmailOptions%2Fto%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102">to</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2Fto%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="to" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2Fto%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>List of destination email addresses.</div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FtoContacts%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="toContacts" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FtoContacts%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="index.html#%5Bcom.mailslurp.models%2FSendEmailOptions%2FtoContacts%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102">toContacts</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FSendEmailOptions%2FtoContacts%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FtoContacts%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="toContacts" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FtoContacts%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="symbol monospace block">private final <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html">UUID</a>&gt; <a href="index.html#%5Bcom.mailslurp.models%2FSendEmailOptions%2FtoContacts%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102">toContacts</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FtoContacts%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="toContacts" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FtoContacts%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>Optional list of contact IDs to send email to.</div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FtoGroup%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="toGroup" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FtoGroup%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="index.html#%5Bcom.mailslurp.models%2FSendEmailOptions%2FtoGroup%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102">toGroup</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FSendEmailOptions%2FtoGroup%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FtoGroup%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="toGroup" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FtoGroup%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="symbol monospace block">private final <a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html">UUID</a> <a href="index.html#%5Bcom.mailslurp.models%2FSendEmailOptions%2FtoGroup%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102">toGroup</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FSendEmailOptions%2FtoGroup%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="toGroup" id="%5Bcom.mailslurp.models%2FSendEmailOptions%2FtoGroup%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>Optional contact group ID to send email to.</div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer"><span class="go-to-top-icon"><a href="#content"></a></span><span>© 2021 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span></div>
+      </div>
+    </div>
+  </body>
+</html>
+

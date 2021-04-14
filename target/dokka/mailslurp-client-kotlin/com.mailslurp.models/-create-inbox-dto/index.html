@@ -1,0 +1,331 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>CreateInboxDto</title>
+<link href="../../../../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script><script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script><link href="../../../styles/style.css" rel="Stylesheet"><link href="../../../styles/logo-styles.css" rel="Stylesheet"><link href="../../../styles/jetbrains-mono.css" rel="Stylesheet"><link href="../../../styles/main.css" rel="Stylesheet"><script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script><script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script><script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script><script type="text/javascript" src="../../../scripts/main.js" async="async"></script>  </head>
+  <body>
+    <div id="container">
+      <div id="leftColumn"><a href="../../../index.html">
+          <div id="logo"></div>
+        </a>
+        <div id="paneSearch"></div>
+        <div id="sideMenu"></div>
+      </div>
+      <div id="main">
+        <div id="leftToggler"><span class="icon-toggler"></span></div>
+<script type="text/javascript" src="../../../scripts/main.js"></script>        <div class="main-content" id="content" pageIds="mailslurp-client-kotlin::com.mailslurp.models/CreateInboxDto///PointingToDeclaration//-2042795102">
+          <div class="navigation-wrapper" id="navigation-wrapper">
+            <div class="breadcrumbs"><a href="../../../index.html">mailslurp-client-kotlin</a>/<a href="../index.html">com.mailslurp.models</a>/<a href="index.html">CreateInboxDto</a></div>
+            <div class="pull-right d-flex">
+              <div id="searchBar"></div>
+            </div>
+          </div>
+          <div class="cover ">
+            <h1 class="cover"><span>Create</span><wbr></wbr><span>Inbox</span><wbr></wbr><span>Dto</span></h1>
+            <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><div class="symbol monospace">public final class <a href="index.html">CreateInboxDto</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Options for creating an inbox. An inbox has a real email address that can send and receive emails. Inboxes can be permanent or expire at a given time. They can use a custom email address (by verifying your own domain) or a randomly assigned email ending in either <code>mailslurp.com</code> or if <code>useDomainPool</code> is enabled then ending in a similar domains such as <code>mailslurp.xyz</code> (selected at random).</p></div></div>
+          </div>
+          <div class="tabbedcontent">
+            <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button><button class="section-tab" data-togglable="Parameters">Parameters</button></div>
+            <div class="tabs-section-body">
+              <h2 class="">Parameters</h2>
+              <div data-togglable="Parameters">
+                <div class="platform-hinted WithExtraAttributes" data-platform-hinted="data-platform-hinted" data-togglable="Parameters"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><div data-togglable="Parameters"><div class="table" data-togglable="Parameters"><div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex">allowTeamAccess</span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">Grant team access to this inbox and the emails that belong to it for team members of your organization.</p></div></div></div></div></div><div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex">description</span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">Optional description of the inbox for labelling purposes. Is shown in the dashboard and can be used with</p></div></div></div></div></div><div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex">emailAddress</span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">A custom email address to use with the inbox. Defaults to null. When null MailSlurp will assign a random email address to the inbox such as <code>123@mailslurp.com</code>. If you use the <code>useDomainPool</code> option when the email address is null it will generate an email address with a more varied domain ending such as <code>123@mailslurp.info</code> or <code>123@mailslurp.biz</code>. When a custom email address is provided the address is split into a domain and the domain is queried against your user. If you have created the domain in the MailSlurp dashboard and verified it you can use any email address that ends with the domain. Send an email to this address and the inbox will receive and store it for you. To retrieve the email use the Inbox and Email Controller endpoints with the inbox ID.</p></div></div></div></div></div><div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex">expiresAt</span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">Optional inbox expiration date. If null then this inbox is permanent and the emails in it won't be deleted. If an expiration date is provided or is required by your plan the inbox will be closed when the expiration time is reached. Expired inboxes still contain their emails but can no longer send or receive emails. An ExpiredInboxRecord is created when an inbox and the email address and inbox ID are recorded. The expiresAt property is a timestamp string in ISO DateTime Format yyyy-MM-dd'T'HH:mm:ss.SSSXXX.</p></div></div></div></div></div><div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex">expiresIn</span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">Number of milliseconds that inbox should exist for</p></div></div></div></div></div><div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex">favourite</span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">Is the inbox favorited. Favouriting inboxes is typically done in the dashboard for quick access or filtering</p></div></div></div></div></div><div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex">name</span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">Optional name of the inbox. Displayed in the dashboard for easier search</p></div></div></div></div></div><div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex">tags</span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">Tags that inbox has been tagged with. Tags can be added to inboxes to group different inboxes within an account. You can also search for inboxes by tag in the dashboard UI.</p></div></div></div></div></div><div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex">useDomainPool</span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">Use the MailSlurp domain name pool with this inbox when creating the email address. Defaults to null. If enabled the inbox will be an email address with a domain randomly chosen from a list of the MailSlurp domains. This is useful when the default <code>@mailslurp.com</code> email addresses used with inboxes are blocked or considered spam by a provider or receiving service. When domain pool is enabled an email address will be generated ending in <code>@mailslurp.{world,info,xyz,...}</code> . This means a TLD is randomly selecting from a list of <code>.biz</code>, <code>.info</code>, <code>.xyz</code> etc to add variance to the generated email addresses. When null or false MailSlurp uses the default behavior of <code>@mailslurp.com</code> or custom email address provided by the emailAddress field.</p></div></div></div></div></div></div></div></div></div>
+              </div>
+              <h2 class="tabbedcontent">Constructors</h2>
+              <div class="table" data-togglable="Constructors"><a data-name="%5Bcom.mailslurp.models%2FCreateInboxDto%2FCreateInboxDto%2F%23kotlin.Boolean%3F%23kotlin.String%3F%23kotlin.String%3F%23java.time.OffsetDateTime%3F%23kotlin.Long%3F%23kotlin.Boolean%3F%23kotlin.String%3F%23kotlin.Array%5Bkotlin.String%5D%3F%23kotlin.Boolean%3F%2FPointingToDeclaration%2F%5D%2FConstructors%2F-2042795102" anchor-label="CreateInboxDto" id="%5Bcom.mailslurp.models%2FCreateInboxDto%2FCreateInboxDto%2F%23kotlin.Boolean%3F%23kotlin.String%3F%23kotlin.String%3F%23java.time.OffsetDateTime%3F%23kotlin.Long%3F%23kotlin.Boolean%3F%23kotlin.String%3F%23kotlin.Array%5Bkotlin.String%5D%3F%23kotlin.Boolean%3F%2FPointingToDeclaration%2F%5D%2FConstructors%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue TabbedContent">
+                    <div class=""><span class="inline-flex"><a href="-create-inbox-dto.html">CreateInboxDto</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FCreateInboxDto%2FCreateInboxDto%2F%23kotlin.Boolean%3F%23kotlin.String%3F%23kotlin.String%3F%23java.time.OffsetDateTime%3F%23kotlin.Long%3F%23kotlin.Boolean%3F%23kotlin.String%3F%23kotlin.Array%5Bkotlin.String%5D%3F%23kotlin.Boolean%3F%2FPointingToDeclaration%2F%5D%2FConstructors%2F-2042795102"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><div class="symbol monospace block"><a href="index.html">CreateInboxDto</a> <a href="-create-inbox-dto.html">CreateInboxDto</a>(<span>@<span data-unresolved-link="com.squareup.moshi/Json///PointingToDeclaration/">Json</span>(<span>name = <span class="breakable-word">allowTeamAccess</span></span><wbr></wbr>) </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html">Boolean</a> allowTeamAccess, <span>@<span data-unresolved-link="com.squareup.moshi/Json///PointingToDeclaration/">Json</span>(<span>name = <span class="breakable-word">description</span></span><wbr></wbr>) </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a> description, <span>@<span data-unresolved-link="com.squareup.moshi/Json///PointingToDeclaration/">Json</span>(<span>name = <span class="breakable-word">emailAddress</span></span><wbr></wbr>) </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a> emailAddress, <span>@<span data-unresolved-link="com.squareup.moshi/Json///PointingToDeclaration/">Json</span>(<span>name = <span class="breakable-word">expiresAt</span></span><wbr></wbr>) </span><a href="https://docs.oracle.com/javase/8/docs/api/java/time/OffsetDateTime.html">OffsetDateTime</a> expiresAt, <span>@<span data-unresolved-link="com.squareup.moshi/Json///PointingToDeclaration/">Json</span>(<span>name = <span class="breakable-word">expiresIn</span></span><wbr></wbr>) </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html">Long</a> expiresIn, <span>@<span data-unresolved-link="com.squareup.moshi/Json///PointingToDeclaration/">Json</span>(<span>name = <span class="breakable-word">favourite</span></span><wbr></wbr>) </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html">Boolean</a> favourite, <span>@<span data-unresolved-link="com.squareup.moshi/Json///PointingToDeclaration/">Json</span>(<span>name = <span class="breakable-word">name</span></span><wbr></wbr>) </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a> name, <span>@<span data-unresolved-link="com.squareup.moshi/Json///PointingToDeclaration/">Json</span>(<span>name = <span class="breakable-word">tags</span></span><wbr></wbr>) </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a>&gt; tags, <span>@<span data-unresolved-link="com.squareup.moshi/Json///PointingToDeclaration/">Json</span>(<span>name = <span class="breakable-word">useDomainPool</span></span><wbr></wbr>) </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html">Boolean</a> useDomainPool)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief ">Grant team access to this inbox and the emails that belong to it for team members of your organization.</div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="">Functions</h2>
+              <div class="table" data-togglable="Functions"><a data-name="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetAllowTeamAccess%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getAllowTeamAccess" id="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetAllowTeamAccess%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="get-allow-team-access.html">getAllowTeamAccess</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetAllowTeamAccess%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><div class="symbol monospace block">final <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html">Boolean</a> <a href="get-allow-team-access.html">getAllowTeamAccess</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetAllowTeamAccess%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getAllowTeamAccess" id="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetAllowTeamAccess%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetAllowTeamAccess%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getAllowTeamAccess" id="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetAllowTeamAccess%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>Grant team access to this inbox and the emails that belong to it for team members of your organization.</div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetDescription%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getDescription" id="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetDescription%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="get-description.html">getDescription</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetDescription%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><div class="symbol monospace block">final <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a> <a href="get-description.html">getDescription</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetDescription%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getDescription" id="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetDescription%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetDescription%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getDescription" id="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetDescription%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>Optional description of the inbox for labelling purposes.</div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetEmailAddress%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getEmailAddress" id="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetEmailAddress%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="get-email-address.html">getEmailAddress</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetEmailAddress%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><div class="symbol monospace block">final <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a> <a href="get-email-address.html">getEmailAddress</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetEmailAddress%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getEmailAddress" id="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetEmailAddress%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetEmailAddress%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getEmailAddress" id="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetEmailAddress%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>A custom email address to use with the inbox.</div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetExpiresAt%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getExpiresAt" id="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetExpiresAt%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="get-expires-at.html">getExpiresAt</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetExpiresAt%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><div class="symbol monospace block">final <a href="https://docs.oracle.com/javase/8/docs/api/java/time/OffsetDateTime.html">OffsetDateTime</a> <a href="get-expires-at.html">getExpiresAt</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetExpiresAt%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getExpiresAt" id="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetExpiresAt%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetExpiresAt%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getExpiresAt" id="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetExpiresAt%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>Optional inbox expiration date.</div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetExpiresIn%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getExpiresIn" id="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetExpiresIn%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="get-expires-in.html">getExpiresIn</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetExpiresIn%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><div class="symbol monospace block">final <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html">Long</a> <a href="get-expires-in.html">getExpiresIn</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetExpiresIn%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getExpiresIn" id="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetExpiresIn%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetExpiresIn%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getExpiresIn" id="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetExpiresIn%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>Number of milliseconds that inbox should exist for</div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetFavourite%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getFavourite" id="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetFavourite%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="get-favourite.html">getFavourite</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetFavourite%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><div class="symbol monospace block">final <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html">Boolean</a> <a href="get-favourite.html">getFavourite</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetFavourite%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getFavourite" id="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetFavourite%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetFavourite%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getFavourite" id="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetFavourite%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>Is the inbox favorited.</div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetName%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getName" id="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetName%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="get-name.html">getName</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetName%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><div class="symbol monospace block">final <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a> <a href="get-name.html">getName</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetName%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getName" id="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetName%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetName%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getName" id="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetName%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>Optional name of the inbox.</div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetTags%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getTags" id="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetTags%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="get-tags.html">getTags</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetTags%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><div class="symbol monospace block">final <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a>&gt; <a href="get-tags.html">getTags</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetTags%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getTags" id="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetTags%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetTags%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getTags" id="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetTags%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>Tags that inbox has been tagged with.</div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetUseDomainPool%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getUseDomainPool" id="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetUseDomainPool%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="get-use-domain-pool.html">getUseDomainPool</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetUseDomainPool%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><div class="symbol monospace block">final <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html">Boolean</a> <a href="get-use-domain-pool.html">getUseDomainPool</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetUseDomainPool%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getUseDomainPool" id="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetUseDomainPool%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetUseDomainPool%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" anchor-label="getUseDomainPool" id="%5Bcom.mailslurp.models%2FCreateInboxDto%2FgetUseDomainPool%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>Use the MailSlurp domain name pool with this inbox when creating the email address.</div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="">Properties</h2>
+              <div class="table" data-togglable="Properties"><a data-name="%5Bcom.mailslurp.models%2FCreateInboxDto%2FallowTeamAccess%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="allowTeamAccess" id="%5Bcom.mailslurp.models%2FCreateInboxDto%2FallowTeamAccess%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="index.html#%5Bcom.mailslurp.models%2FCreateInboxDto%2FallowTeamAccess%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102">allowTeamAccess</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FCreateInboxDto%2FallowTeamAccess%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><a data-name="%5Bcom.mailslurp.models%2FCreateInboxDto%2FallowTeamAccess%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="allowTeamAccess" id="%5Bcom.mailslurp.models%2FCreateInboxDto%2FallowTeamAccess%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="symbol monospace block">private final <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html">Boolean</a> <a href="index.html#%5Bcom.mailslurp.models%2FCreateInboxDto%2FallowTeamAccess%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102">allowTeamAccess</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FCreateInboxDto%2FallowTeamAccess%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="allowTeamAccess" id="%5Bcom.mailslurp.models%2FCreateInboxDto%2FallowTeamAccess%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>Grant team access to this inbox and the emails that belong to it for team members of your organization.</div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.mailslurp.models%2FCreateInboxDto%2Fdescription%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="description" id="%5Bcom.mailslurp.models%2FCreateInboxDto%2Fdescription%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="index.html#%5Bcom.mailslurp.models%2FCreateInboxDto%2Fdescription%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102">description</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FCreateInboxDto%2Fdescription%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><a data-name="%5Bcom.mailslurp.models%2FCreateInboxDto%2Fdescription%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="description" id="%5Bcom.mailslurp.models%2FCreateInboxDto%2Fdescription%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="symbol monospace block">private final <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a> <a href="index.html#%5Bcom.mailslurp.models%2FCreateInboxDto%2Fdescription%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102">description</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FCreateInboxDto%2Fdescription%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="description" id="%5Bcom.mailslurp.models%2FCreateInboxDto%2Fdescription%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>Optional description of the inbox for labelling purposes.</div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.mailslurp.models%2FCreateInboxDto%2FemailAddress%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="emailAddress" id="%5Bcom.mailslurp.models%2FCreateInboxDto%2FemailAddress%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="index.html#%5Bcom.mailslurp.models%2FCreateInboxDto%2FemailAddress%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102">emailAddress</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FCreateInboxDto%2FemailAddress%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><a data-name="%5Bcom.mailslurp.models%2FCreateInboxDto%2FemailAddress%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="emailAddress" id="%5Bcom.mailslurp.models%2FCreateInboxDto%2FemailAddress%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="symbol monospace block">private final <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a> <a href="index.html#%5Bcom.mailslurp.models%2FCreateInboxDto%2FemailAddress%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102">emailAddress</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FCreateInboxDto%2FemailAddress%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="emailAddress" id="%5Bcom.mailslurp.models%2FCreateInboxDto%2FemailAddress%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>A custom email address to use with the inbox.</div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.mailslurp.models%2FCreateInboxDto%2FexpiresAt%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="expiresAt" id="%5Bcom.mailslurp.models%2FCreateInboxDto%2FexpiresAt%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="index.html#%5Bcom.mailslurp.models%2FCreateInboxDto%2FexpiresAt%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102">expiresAt</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FCreateInboxDto%2FexpiresAt%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><a data-name="%5Bcom.mailslurp.models%2FCreateInboxDto%2FexpiresAt%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="expiresAt" id="%5Bcom.mailslurp.models%2FCreateInboxDto%2FexpiresAt%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="symbol monospace block">private final <a href="https://docs.oracle.com/javase/8/docs/api/java/time/OffsetDateTime.html">OffsetDateTime</a> <a href="index.html#%5Bcom.mailslurp.models%2FCreateInboxDto%2FexpiresAt%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102">expiresAt</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FCreateInboxDto%2FexpiresAt%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="expiresAt" id="%5Bcom.mailslurp.models%2FCreateInboxDto%2FexpiresAt%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>Optional inbox expiration date.</div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.mailslurp.models%2FCreateInboxDto%2FexpiresIn%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="expiresIn" id="%5Bcom.mailslurp.models%2FCreateInboxDto%2FexpiresIn%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="index.html#%5Bcom.mailslurp.models%2FCreateInboxDto%2FexpiresIn%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102">expiresIn</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FCreateInboxDto%2FexpiresIn%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><a data-name="%5Bcom.mailslurp.models%2FCreateInboxDto%2FexpiresIn%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="expiresIn" id="%5Bcom.mailslurp.models%2FCreateInboxDto%2FexpiresIn%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="symbol monospace block">private final <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html">Long</a> <a href="index.html#%5Bcom.mailslurp.models%2FCreateInboxDto%2FexpiresIn%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102">expiresIn</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FCreateInboxDto%2FexpiresIn%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="expiresIn" id="%5Bcom.mailslurp.models%2FCreateInboxDto%2FexpiresIn%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>Number of milliseconds that inbox should exist for</div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.mailslurp.models%2FCreateInboxDto%2Ffavourite%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="favourite" id="%5Bcom.mailslurp.models%2FCreateInboxDto%2Ffavourite%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="index.html#%5Bcom.mailslurp.models%2FCreateInboxDto%2Ffavourite%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102">favourite</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FCreateInboxDto%2Ffavourite%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><a data-name="%5Bcom.mailslurp.models%2FCreateInboxDto%2Ffavourite%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="favourite" id="%5Bcom.mailslurp.models%2FCreateInboxDto%2Ffavourite%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="symbol monospace block">private final <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html">Boolean</a> <a href="index.html#%5Bcom.mailslurp.models%2FCreateInboxDto%2Ffavourite%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102">favourite</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FCreateInboxDto%2Ffavourite%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="favourite" id="%5Bcom.mailslurp.models%2FCreateInboxDto%2Ffavourite%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>Is the inbox favorited.</div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.mailslurp.models%2FCreateInboxDto%2Fname%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="name" id="%5Bcom.mailslurp.models%2FCreateInboxDto%2Fname%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="index.html#%5Bcom.mailslurp.models%2FCreateInboxDto%2Fname%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102">name</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FCreateInboxDto%2Fname%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><a data-name="%5Bcom.mailslurp.models%2FCreateInboxDto%2Fname%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="name" id="%5Bcom.mailslurp.models%2FCreateInboxDto%2Fname%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="symbol monospace block">private final <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a> <a href="index.html#%5Bcom.mailslurp.models%2FCreateInboxDto%2Fname%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102">name</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FCreateInboxDto%2Fname%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="name" id="%5Bcom.mailslurp.models%2FCreateInboxDto%2Fname%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>Optional name of the inbox.</div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.mailslurp.models%2FCreateInboxDto%2Ftags%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="tags" id="%5Bcom.mailslurp.models%2FCreateInboxDto%2Ftags%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="index.html#%5Bcom.mailslurp.models%2FCreateInboxDto%2Ftags%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102">tags</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FCreateInboxDto%2Ftags%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><a data-name="%5Bcom.mailslurp.models%2FCreateInboxDto%2Ftags%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="tags" id="%5Bcom.mailslurp.models%2FCreateInboxDto%2Ftags%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="symbol monospace block">private final <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a>&gt; <a href="index.html#%5Bcom.mailslurp.models%2FCreateInboxDto%2Ftags%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102">tags</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FCreateInboxDto%2Ftags%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="tags" id="%5Bcom.mailslurp.models%2FCreateInboxDto%2Ftags%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>Tags that inbox has been tagged with.</div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.mailslurp.models%2FCreateInboxDto%2FuseDomainPool%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="useDomainPool" id="%5Bcom.mailslurp.models%2FCreateInboxDto%2FuseDomainPool%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>
+                <div class="table-row" data-filterable-current="mailslurp-client-kotlin/JVM" data-filterable-set="mailslurp-client-kotlin/JVM">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="index.html#%5Bcom.mailslurp.models%2FCreateInboxDto%2FuseDomainPool%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102">useDomainPool</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.mailslurp.models%2FCreateInboxDto%2FuseDomainPool%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable="mailslurp-client-kotlin/JVM"><a data-name="%5Bcom.mailslurp.models%2FCreateInboxDto%2FuseDomainPool%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="useDomainPool" id="%5Bcom.mailslurp.models%2FCreateInboxDto%2FuseDomainPool%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a><div class="symbol monospace block">private final <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html">Boolean</a> <a href="index.html#%5Bcom.mailslurp.models%2FCreateInboxDto%2FuseDomainPool%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102">useDomainPool</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="%5Bcom.mailslurp.models%2FCreateInboxDto%2FuseDomainPool%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" anchor-label="useDomainPool" id="%5Bcom.mailslurp.models%2FCreateInboxDto%2FuseDomainPool%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-2042795102" data-filterable-set="mailslurp-client-kotlin/JVM"></a>Use the MailSlurp domain name pool with this inbox when creating the email address.</div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer"><span class="go-to-top-icon"><a href="#content"></a></span><span>© 2021 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span></div>
+      </div>
+    </div>
+  </body>
+</html>
+
