@@ -1,0 +1,27 @@
+
+# DomainDto
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**createdAt** | [**java.time.OffsetDateTime**](java.time.OffsetDateTime) |  | 
+**id** | [**java.util.UUID**](java.util.UUID) |  | 
+**updatedAt** | [**java.time.OffsetDateTime**](java.time.OffsetDateTime) |  | 
+**userId** | [**java.util.UUID**](java.util.UUID) |  | 
+**catchAllInboxId** | [**java.util.UUID**](java.util.UUID) | The optional catch all inbox that will receive emails sent to the domain that cannot be matched. |  [optional]
+**dkimTokens** | **kotlin.collections.List&lt;kotlin.String&gt;** | Unique token DKIM tokens |  [optional]
+**domain** | **kotlin.String** | Custom domain name |  [optional]
+**domainNameRecords** | [**kotlin.collections.List&lt;DomainNameRecord&gt;**](DomainNameRecord) | List of DNS domain name records (C, MX, TXT) etc that you must add to the DNS server associated with your domain provider. |  [optional]
+**domainType** | [**inline**](#DomainTypeEnum) | The type of domain. SMTP or HTTP domains differ in what inboxes can be used with them. |  [optional]
+**isVerified** | **kotlin.Boolean** | Whether domain has been verified or not. If the domain is not verified after 72 hours there is most likely an issue with the domains DNS records. |  [optional]
+**verificationToken** | **kotlin.String** | Verification tokens |  [optional]
+
+
+<a name="DomainTypeEnum"></a>
+## Enum: domainType
+Name | Value
+---- | -----
+domainType | HTTP_INBOX, SMTP_DOMAIN
+
+
+
